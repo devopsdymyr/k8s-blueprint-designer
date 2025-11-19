@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: k8s-blueprint-designer:latest
+    ports:
+      - "8080:8080"
+      - "3000:3000"
+    volumes:
+      # Mount kubeconfig if running outside cluster
+      - ${HOME}/.kube:/root/.kube:ro
+      # Or use KUBECONFIG env var
+    environment:
+      - KUBECONFIG=${KUBECONFIG:-/root/.kube/config}
+    # For in-cluster deployment, remove volumes and use serviceAccount
+    # serviceAccountName: k8s-discovery-engine
+    restart: unless-stopped
+

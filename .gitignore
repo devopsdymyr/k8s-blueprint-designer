@@ -1,0 +1,94 @@
+# Binaries and compiled files
+backend/k8s-discovery-engine
+backend/*.exe
+backend/*.dll
+backend/*.so
+backend/*.dylib
+*.test
+*.out
+
+# Go specific
+*.mod.sum
+vendor/
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env*
+frontend/.cache/
+frontend/.parcel-cache/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnp
+frontend/.pnp.js
+
+# Environment and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+secrets/
+credentials/
+*.pem
+*.key
+*.crt
+*.p12
+kubeconfig*
+.kube/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Temporary files
+/tmp/
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+*.old
+
+# Coverage and test files
+coverage/
+*.cover
+*.prof
+
+# Build artifacts
+build/
+dist/
+out/
+target/
+*.o
+*.a
+
+# Docker
+.dockerignore
+
+# Kubernetes (if contains sensitive data)
+# k8s/*.yaml  # Uncomment if deployment files contain secrets
