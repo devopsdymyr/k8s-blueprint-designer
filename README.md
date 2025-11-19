@@ -7,6 +7,12 @@ A production-ready, enterprise-grade tool to visualize and manage Kubernetes clu
 ![React](https://img.shields.io/badge/React-18.2+-61DAFB?style=for-the-badge&logo=react)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
+## 📸 Screenshot
+
+![K8s Blueprint Designer Dashboard](docs/images/home.png)
+
+**Interactive Kubernetes Resource Visualization** - Real-time graph showing StatefulSets, Services, Pods, ConfigMaps, Secrets, PVCs, and their relationships with advanced filtering and customizable layouts.
+
 ## 🚀 Features
 
 - **🔍 Real-time Discovery**: Automatically discovers all Kubernetes resources in your cluster
@@ -175,26 +181,6 @@ npm start
 2. **Docker**: Use `docker-compose up`
 3. **Kubernetes**: Apply `k8s/deployment.yaml`
 4. **Standalone Binary**: Build and run backend, serve frontend with nginx
-
-## 📸 Screenshots
-
-### Dashboard Overview
-
-![K8s Blueprint Designer Dashboard](docs/images/home.png)
-
-**Vault Namespace Visualization** - Interactive graph showing:
-- **StatefulSets** (Purple) managing Pods
-- **Services** (Green) routing traffic to Pods
-- **ConfigMaps** (Yellow) and **Secrets** (Red) used by workloads
-- **PVCs** (Grey) for persistent storage
-- **Real-time connections** showing resource relationships
-
-The dashboard provides:
-- ✅ Advanced filtering by resource types and connection types
-- ✅ Customizable layer ordering for optimal visualization
-- ✅ Search functionality to quickly find resources
-- ✅ Export capabilities for documentation
-- ✅ Live updates via WebSocket
 
 ## 🛠️ Tech Stack
 
