@@ -178,7 +178,23 @@ npm start
 
 ## 📸 Screenshots
 
-*Coming soon - Add screenshots of the visualization*
+### Dashboard Overview
+
+![K8s Blueprint Designer Dashboard](docs/images/home.png)
+
+**Vault Namespace Visualization** - Interactive graph showing:
+- **StatefulSets** (Purple) managing Pods
+- **Services** (Green) routing traffic to Pods
+- **ConfigMaps** (Yellow) and **Secrets** (Red) used by workloads
+- **PVCs** (Grey) for persistent storage
+- **Real-time connections** showing resource relationships
+
+The dashboard provides:
+- ✅ Advanced filtering by resource types and connection types
+- ✅ Customizable layer ordering for optimal visualization
+- ✅ Search functionality to quickly find resources
+- ✅ Export capabilities for documentation
+- ✅ Live updates via WebSocket
 
 ## 🛠️ Tech Stack
 
